@@ -4,9 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>cheddarbread.io</title>
 </head>
 <style>
+    @font-face {
+        font-family: 'Carey-Type';
+        src: url('./fonts/Carey-Type.woff2') format('woff2'),
+            url('./fonts/Carey-Type.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
     html {
         font-family: sans-serif;
         background-color: #fffcf8;
@@ -14,7 +24,7 @@
     }
 
     body {
-        padding: 10px 20px;
+        padding: 10px 10px;
     }
 
     .container {
@@ -28,12 +38,13 @@
     }
 
     .emoji {
-        font-size: 90px;
+        font-size: 72px;
     }
 
     h1.title {
         font-family: "Carey-Type", sans-serif;
-        font-size: 2.5em;
+        font-size: 2.2em;
+        margin-top: 25px;
         margin-bottom: 0;
     }
 
@@ -56,6 +67,7 @@
         color: #444444;
         letter-spacing: 0.03em;
         font-size: 0.85em;
+        line-height: 1.25em;
         margin-top: 0px;
         margin-bottom: 30px;
     }
