@@ -10,12 +10,46 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#fffffe">
 
     <title>Cheddarbread.io</title>
     <style>
+        @font-face {
+            font-family: 'Libre Franklin';
+            src: url('./fonts/LibreFranklin-Bold.woff2') format('woff2'),
+                url('./fonts/LibreFranklin-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Libre Franklin';
+            src: url('./fonts/LibreFranklin-Italic.woff2') format('woff2'),
+                url('./fonts/LibreFranklin-Italic.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Libre Franklin';
+            src: url('./fonts/LibreFranklin-Regular.woff2') format('woff2'),
+                url('./fonts/LibreFranklin-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Libre Franklin';
+            src: url('./fonts/LibreFranklin-BoldItalic.woff2') format('woff2'),
+                url('./fonts/LibreFranklin-BoldItalic.woff') format('woff');
+            font-weight: bold;
+            font-style: italic;
+            font-display: swap;
+        }
+
         @font-face {
             font-family: 'Carey-Type';
             src: url('./fonts/Carey-Type.woff2') format('woff2'),
@@ -49,12 +83,13 @@
         header img {
             width: 98px;
             height: auto;
-            padding: 3px;
+            /*padding: 3px;*/
             /*border: 2px solid #eee;*/
             border-radius: 50%;
-            background: lightgreen;
+            /*background: lightgreen;*/
             /*background: rgb(255, 229, 157);*/
             background: rgb(183, 157, 255);
+            border: 3.5px solid rgb(183, 157, 255);
             /*border-bottom: 2px solid #eee;*/
             /*box-shadow:
                 0 0px 0.8px rgba(0, 0, 0, 0.008),
@@ -73,13 +108,15 @@
             font-family: "Carey-Type", sans-serif;
             font-size: 2em;
             margin-top: 10px;
-            margin-bottom: 2px;
+            margin-bottom: 3px;
         }
 
         h2 {
             font-size: 1.5em;
             margin: 0.75em 0 0.5em;
             letter-spacing: -0.01em;
+            font-family: "Libre Franklin", serif;
+            font-weight: 700;
         }
 
         p {
@@ -128,7 +165,11 @@
     <div class="container">
         <header>
             <!--<span class="emoji">🥐</span>-->
-            <img src="./cheddarbread.png" />
+            <picture>
+                <source srcset="./images/logo.webp" type="image/webp">
+                <source srcset="./images/logo.png" type="image/jpeg">
+                <img src="./images/logo.png" alt="cheddarbread logo" />
+            </picture>
             <h1 class="title">cheddarbread</h1>
             <p class="subtitle">Delicious applications, baked to perfection.</p>
         </header>
@@ -143,12 +184,14 @@
                     accusamus maxime fuga? 🧆</p>
             </div>
         </div>-->
-        <h2 class="title">sheetloaf</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui accusantium quos blanditiis laboriosam
-            magni
-            error eius eaque consectetur sint pariatur vitae voluptatibus culpa cupiditate recusandae neque,
-            omnis
-            accusamus maxime fuga? 🧆</p>
+        <!--<h2 class="title">🌌 stellarsheet</h2>
+        <p>Out of this world sass processing. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui accusantium
+            quos blanditiis laboriosam magni error eius eaque consectetur sint pariatur vitae voluptatibus culpa
+            cupiditate recusandae neque, omnis accusamus maxime fuga?</p>-->
+        <h2 class="title">🍖 sheetloaf</h2>
+        <p>For the whole family. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui accusantium
+            quos blanditiis laboriosam magni error eius eaque consectetur sint pariatur vitae voluptatibus culpa
+            cupiditate recusandae neque, omnis accusamus maxime fuga?</p>
     </div>
 </body>
 
