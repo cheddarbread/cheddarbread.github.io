@@ -1,0 +1,27 @@
+:root {
+    --main-bg-color: #fffffe;
+    --main-text-color: #3f3827;
+    --strong-text-color: #000000;
+    --subtle-color: #eee;
+    --primary-color: #ffdb6b;
+    --secondary-color: rgb(183, 157, 255);
+    
+    // Dark Styles 
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-bg-color: #444444;
+        --main-text-color: #eee;
+        --strong-text-color: #ffffff;
+        --subtle-color: #535353;
+    }
+}
+
+.oldStyles {
+color: #F5EEB4;
+color: #a17c01;
+color: #e49d03;
+color: #595959;
+color: #444444;
+}

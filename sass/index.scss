@@ -1,0 +1,74 @@
+@use '_colors.scss';
+@use '_fonts.scss';
+
+html {
+    font-family: sans-serif;
+    background-color: var(--main-bg-color); 
+    color: var(--main-text-color);
+}
+ 
+body {
+    padding: 10px 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 3px solid var(--subtle-color);
+}
+
+header img {
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    border: 3.5px solid var(--secondary-color);
+}
+ 
+.emoji {
+    font-size: 60px;
+}
+
+h1.title {
+    font-family: "Carey-Type", sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    color: var(--strong-text-color);
+}
+
+h2 { 
+    font-size: 1.5em;
+    margin: 0.75em 0 0.5em;
+    letter-spacing: -0.01em;
+    font-family: var(--primary-font);
+    color: var(--strong-text-color);
+    font-weight: 700; 
+}
+
+p {
+    line-height: 1.8em;
+}
+
+p.subtitle {
+    font-style: italic;
+    letter-spacing: 0.03em;
+    font-size: 0.85em;
+    line-height: 1.25em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.button {
+    font-size: 0.9em;
+    padding: 7px 12px;
+    border-radius: 4px;
+    text-decoration: none !important;
+    color: #000;
+    background-color: var(--primary-color);
+}
