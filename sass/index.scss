@@ -3,17 +3,17 @@
 
 html {
     font-family: sans-serif;
-    background-color: var(--main-bg-color); 
+    background-color: var(--main-bg-color);
     color: var(--main-text-color);
 }
- 
+
 body {
     padding: 10px 10px;
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 header {
@@ -29,7 +29,7 @@ header img {
     background: var(--secondary-color);
     border: 3.5px solid var(--secondary-color);
 }
- 
+
 .emoji {
     font-size: 60px;
 }
@@ -42,13 +42,13 @@ h1.title {
     color: var(--strong-text-color);
 }
 
-h2 { 
+h2 {
     font-size: 1.5em;
     margin: 0.75em 0 0.5em;
     letter-spacing: -0.01em;
     font-family: var(--primary-font);
     color: var(--strong-text-color);
-    font-weight: 700; 
+    font-weight: 700;
 }
 
 p {
@@ -56,19 +56,47 @@ p {
 }
 
 p.subtitle {
+    font-family: var(--primary-font);
     font-style: italic;
     letter-spacing: 0.03em;
-    font-size: 0.85em;
+    font-size: 0.8em;
     line-height: 1.25em;
     margin-top: 0px;
     margin-bottom: 20px;
 }
 
-.button {
+.linkButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: 0.9em;
-    padding: 7px 12px;
+    padding: 2px 12px;
     border-radius: 4px;
     text-decoration: none !important;
     color: #000;
     background-color: var(--primary-color);
+    transition: all 200ms;
+
+    &:hover,
+    &:focus {
+        background-color: var(--secondary-color);
+        box-shadow: 0 1px 1.2px rgba(0, 0, 0, 0.02),
+            0 2.3px 3px rgba(0, 0, 0, 0.028),
+            0 4.4px 5.6px rgba(0, 0, 0, 0.035),
+            0 7.8px 10.1px rgba(0, 0, 0, 0.042),
+            0 14.6px 18.8px rgba(0, 0, 0, 0.05),
+            0 35px 45px rgba(0, 0, 0, 0.07);
+        transform: scale(1.1);
+        color: #fff;
+
+        img {
+            filter: invert(1);
+        }
+    }
+
+    img {
+        transition: all 200ms;
+        width: 16px;
+        margin-left: 8px;
+    }
 }

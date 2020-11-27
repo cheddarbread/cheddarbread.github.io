@@ -3,13 +3,15 @@
     "version": "0.1.1",
     "description": "lorem ipsum",
     "scripts": {
-        "build": "sheetloaf sass/**/*.scss css --style expanded --use autoprefixer,postcss-preset-env --watch"
+        "build": "sheetloaf \"sass/**/*.scss\" --dir css --style compressed --use autoprefixer,postcss-preset-env --watch"
     },
     "author": "Benjamin Richardson",
-    "devDependencies": {
-        "autoprefixer": "^9.8.6",
-        "sheetloaf": "^0.3.0",
-        "postcss-preset-env": "^6.7.0"
+    "dependencies": {
+        "autoprefixer": "^10.0.3",
+        "postcss": "^8.1.10",
+        "postcss-preset-env": "^6.7.0",
+        "sheetloaf": "^0.9.0"
     },
-    "dependencies": {}
+    "license": "GPL-3.0-or-later",
+    "repository": "https://github.com/cheddarbread/cheddarbread.github.io"
 }
