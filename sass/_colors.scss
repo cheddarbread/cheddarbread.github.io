@@ -1,28 +1,19 @@
 :root {
-    --main-bg-color: #fffffe;
+    --main-bg-color: rgb(252, 252, 253);
     --main-text-color: #3f3827;
     --strong-text-color: #000000;
     --subtle-color: #eee;
     --primary-color: #ffdb6b;
-    --secondary-color: rgb(75, 16, 236);
-
-    // Dark Styles 
+    --primary-color-dark: #e49d03;
+    --outline: rgb(48, 0, 160);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --main-bg-color: #444444;
-        --main-text-color: #eee;
-        --strong-text-color: #ffffff;
+        --main-bg-color: rgb(41, 42, 45);
+        --main-text-color: rgb(181, 181, 182);
+        --strong-text-color: rgb(205, 205, 206);
         --subtle-color: #535353;
+        --outline: #d0b1ff;
     }
-}
-
-.oldStyles {
-    color: #F5EEB4;
-    color: #a17c01;
-    color: #e49d03;
-    color: #595959;
-    color: #444444;
-    color: rgb(183, 157, 255);
 }
