@@ -3,7 +3,7 @@
     "version": "0.1.1",
     "description": "lorem ipsum",
     "scripts": {
-        "build": "sheetloaf  \"sass/**/*.scss\" --output css/index.css --style compressed --use autoprefixer,postcss-custom-properties --watch"
+        "build": "sheetloaf  \"sass/**/*.scss\" --output css/index.css --style compressed --use autoprefixer,postcss-custom-properties --watch --no-source-map"
     },
     "author": "Benjamin Richardson",
     "dependencies": {

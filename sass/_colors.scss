@@ -4,8 +4,11 @@
     --strong-text-color: #000000;
     --subtle-color: #eee;
     --primary-color: #ffdb6b;
+    --primary-color-light: #ffe79e;
     --primary-color-dark: #e49d03;
-    --outline: rgb(48, 0, 160);
+    --primary-color-dark-light: #ddad44;
+    --link-color: #867b73;
+    --outline: #7745f3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +17,7 @@
         --main-text-color: rgb(181, 181, 182);
         --strong-text-color: rgb(205, 205, 206);
         --subtle-color: #535353;
+        --link-color: #8b8b8b;
         --outline: #d0b1ff;
     }
 }
