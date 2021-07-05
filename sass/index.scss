@@ -78,7 +78,7 @@ header {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		padding: 2px 12px;
+		padding: 5px 14px;
 		border-width: 0 0 2px;
 		border-color: var(--primary-color-dark);
 		border-style: solid;
@@ -86,15 +86,12 @@ header {
 		text-decoration: none !important;
 		color: #000;
 		background-color: var(--primary-color);
-		transition: box-shadow 300ms, background-color 300ms, color 300ms;
+		transition: background-color 300ms, border-color 300ms;
 
 		&:hover,
 		&:focus {
 			background-color: var(--primary-color-light);
 			border-color: var(--primary-color-dark-light);
-			// box-shadow: 0 0.3px 1.3px -4px rgba(0, 0, 0, 0.1),
-			// 	0 0.9px 4.5px -4px rgba(0, 0, 0, 0.2),
-			// 	0 4px 20px -4px rgba(0, 0, 0, 0.28);
 		}
 
 		img {
