@@ -42,7 +42,6 @@ header {
 		margin-top: 10px;
 		margin-bottom: 3px;
 		font-family: var(--primary-font);
-		color: var(--strong-text-color);
 	}
 
 	p.subtitle {
@@ -57,16 +56,27 @@ header {
 }
 
 .appContainer {
-	margin-bottom: 20px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid var(--subtle-color);
+	margin-bottom: 25px;
+	background: var(--container-bg);
+	//border-bottom: 1px solid var(--subtle-color);
+	padding: 25px;
+	color: var(--strong-text-color);
+	border-radius: 20px;
+	box-shadow: var(--shadow);
+
+	>*:first-child {
+		margin-top: 0 !important;
+	}
+
+	>*:last-child {
+		margin-bottom: 0 !important;
+	}
 
 	h2 {
 		font-size: 1.6em;
 		margin: 0.75em 0 0.5em;
 		letter-spacing: -0.01em;
 		font-family: var(--primary-font);
-		color: var(--strong-text-color);
 		font-weight: 700;
 	}
 
