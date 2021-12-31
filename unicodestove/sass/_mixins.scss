@@ -1,0 +1,64 @@
+@use "sass:math";
+
+/// Accessible backgrounds! Ensure your elements always have proper contrast.
+/// @author Ben Richardson
+/// @param {string} $bg - The background to use for the element.
+/// @param {string} $textDark [dark] - Text color to use when element's background is above a certain threshold in lightness.
+/// @param {string} $textLight [white] - Text color to use when element's background is below a certain threshold in lightness.
+@mixin bgWithContrast($bg, $textDark: black, $textLight: white) {
+    background-color: $bg;
+
+    $color-brightness: round(
+        (red($bg) * 299) + (green($bg) * 587) +
+            math.div((blue($bg) * 114), 1000)
+    );
+    $light-color: round(
+        (red(#ffffff) * 299) + (green(#ffffff) * 587) +
+            math.div((blue(#ffffff) * 114), 1000)
+    );
+
+    @if abs($color-brightness) < math.div($light-color, 2) {
+        color: $textLight;
+    } @else {
+        color: $textDark;
+    }
+}
+
+/// Accessible text! Ensure your elements always have proper contrast.
+/// @author Ben Richardson
+/// @param {string} $textColor - The text color to use for the element.
+/// @param {string} $bgDark [dark] - Background color to use when element's text is above a certain threshold in lightness.
+/// @param {string} $bgLight [white] - Background color to use when element's text is below a certain threshold in lightness.
+@mixin colorWithContrast($textColor, $bgDark: black, $bgLight: white) {
+    color: $textColor;
+
+    $color-brightness: round(
+        (red($textColor) * 299) + (green($textColor) * 587) +
+            math.div((blue($textColor) * 114), 1000)
+    );
+    $light-color: round(
+        (red(#ffffff) * 299) + (green(#ffffff) * 587) +
+            math.div((blue(#ffffff) * 114), 1000)
+    );
+
+    @if abs($color-brightness) < math.div($light-color, 2) {
+        background-color: $bgLight;
+    } @else {
+        background-color: $bgDark;
+    }
+}
+
+@mixin hoverAndFocus {
+    @media (hover: hover) and (any-pointer: fine) {
+        &:hover {
+            @content;
+        }
+    }
+    &.focus-visible {
+        @content;
+    }
+
+    &:focus-visible {
+        @content;
+    }
+}

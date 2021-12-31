@@ -1,69 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>cheddarbread.io</title>
 
-<head>
-    <title>cheddarbread.io</title>
+        <!-- Housekeeping -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="Description" content="Delicious applications, baked to perfection. This is a site for all of my personal projects." />
 
-    <!-- Housekeeping -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="Description" content="Delicious applications, baked to perfection. This is a site for all of my personal projects.">
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+        <meta name="theme-color" content="#fffffe" />
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <meta name="theme-color" content="#fffffe">
+        <!-- Styles -->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <picture>
-                <source srcset="./images/logo.avif" type="image/avif">
-                <source srcset="./images/logo.png" type="image/jpeg">
-                <img style="width: 90px; height: 90px" src="./images/logo.png" alt="cheddarbread logo" />
-            </picture>
-            <h1 class="title">cheddarbread</h1>
-            <p class="subtitle">Delicious applications, baked to perfection.</p>
-        </header>
-        <div class="appContainer">
-            <h2 class="appName"><span class="emoji">📃🍞</span> sheetloaf</h2>
-            <p>Fresh-made stylesheets for the whole family. Compile sass files to CSS and transform using postcss, all
-                in one command.</p>
-            <p>
-                <a class="linkButton" rel="noopener" target="_blank" href="https://github.com/cheddarbread/sheetloaf">
-                    Github Repo
-                    <img style="width: 16px; height: 16px" aria-hidden="true" src="./images/external-link.svg" alt="External link icon" />
-                </a>
-            </p>
+    <body>
+        <div class="container">
+            <header>
+                <picture>
+                    <source srcset="./images/logo.avif" type="image/avif" />
+                    <source srcset="./images/logo.png" type="image/jpeg" />
+                    <img style="width: 90px; height: 90px" src="./images/logo.png" alt="cheddarbread logo" />
+                </picture>
+                <h1 class="title">cheddarbread</h1>
+                <p class="subtitle">Delicious applications, baked to perfection.</p>
+            </header>
+            <div class="appContainer">
+                <h2 class="appName"><span class="emoji">📃🍞</span> sheetloaf</h2>
+                <p>Fresh-made stylesheets for the whole family. Compile sass files to CSS and transform using postcss, all in one command.</p>
+                <p>
+                    <a class="linkButton" rel="noopener" target="_blank" href="https://github.com/cheddarbread/sheetloaf">
+                        Github Repo
+                        <img style="width: 16px; height: 16px" aria-hidden="true" src="./images/external-link.svg" alt="External link icon" />
+                    </a>
+                </p>
+            </div>
+            <!-- END .appContainer -->
+            <div class="appContainer">
+                <h2 class="appName"><span class="emoji">🍲</span> unicodestove</h2>
+                <p>Boil your text down to a tasty ascii sauce. Great for removing unicode nasties like non-breaking and half-width spaces.</p>
+                <p>
+                    <a class="linkButton" rel="noopener" target="_blank" href="/unicodestove/">
+                        Try It
+                        <img style="width: 16px; height: 16px" aria-hidden="true" src="./images/external-link.svg" alt="External link icon" />
+                    </a>
+                </p>
+            </div>
+            <!-- END .appContainer -->
+            <div class="appContainer">
+                <h2 class="appName"><span class="emoji">🦊</span> contrast++</h2>
+                <p>A theme that re-balances the contrast of Firefox Proton's UI that debuted in v89.</p>
+                <p>
+                    <a class="linkButton" rel="noopener" target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/contrastplusplus/">
+                        Firefox Addon
+                        <img style="width: 16px; height: 16px" aria-hidden="true" src="./images/external-link.svg" alt="External link icon" />
+                    </a>
+                </p>
+            </div>
+            <!-- END .appContainer -->
+            <footer>
+                <span>Benjamin Richardson | 2021 - 2022</span>
+            </footer>
         </div>
-        <!-- END .appContainer -->
-        <div class="appContainer">
-            <h2 class="appName"><span class="emoji">🦊</span> contrast++</h2>
-            <p>A theme that re-balances the contrast of Firefox Proton's UI that debuted in v89.</p>
-            <p>
-                <a class="linkButton" rel="noopener" target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/contrastplusplus/">
-                    Firefox Addon
-                    <img style="width: 16px; height: 16px" aria-hidden="true" src="./images/external-link.svg" alt="External link icon" />
-                </a>
-            </p>
-        </div>
-        <!-- END .appContainer -->
-        <div class="appContainer">
-            <h2 class="appName"><span class="emoji">🍳</span> stovetop</h2>
-            <p>Coming soon.</p>
-        </div>
-        <!-- END .appContainer -->
-        <footer>
-            <span>2021</span>
-        </footer>
-    </div>
-    <!-- END .container -->
-</body>
-
+        <!-- END .container -->
+    </body>
 </html>
