@@ -5,7 +5,7 @@
     "scripts": {
         "build:css": "sheetloaf  \"sass/**/*.scss\" --dir css/ --base sass/ --style compressed --use autoprefixer,postcss-custom-properties --watch --no-source-map",
         "build:unicodestove:js": "esbuild unicodestove/scripts/index.js --outfile=unicodestove/scripts/index.bundle.js --bundle --watch",
-        "build:unicodestove:css":  "sheetloaf unicodestove/sass/style.scss --output unicodestove/css/style.css --style compressed --use autoprefixer,postcss-custom-properties --watch --no-source-map"
+        "build:unicodestove:css": "sheetloaf unicodestove/sass/style.scss --output unicodestove/css/style.css --style compressed --use autoprefixer,postcss-custom-properties --watch --no-source-map"
     },
     "author": "Benjamin Richardson",
     "dependencies": {
