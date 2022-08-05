@@ -1,53 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>cheddarbread.io</title>
 
-        <!-- Housekeeping -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="Description" content="Delicious applications, baked to perfection. This is a site for all of my personal projects." />
+<head>
+    <title>cheddarbread.io</title>
 
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
-        <meta name="theme-color" content="#fffffe" />
+    <!-- Housekeeping -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="Description"
+        content="Delicious applications, baked to perfection. This is a site for all of my personal projects." />
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="./css/style.css" />
-    </head>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <meta name="theme-color" content="#fffffe" />
 
-    <body>
-        <div class="container">
-            <header>
-                <picture>
-                    <source srcset="./images/logo.avif" type="image/avif" />
-                    <source srcset="./images/logo.png" type="image/jpeg" />
-                    <img style="width: 90px; height: 90px" src="./images/logo.png" alt="cheddarbread logo" />
-                </picture>
-                <h1 class="title">cheddarbread</h1>
-                <p class="subtitle">Delicious applications, baked to perfection.</p>
-            </header>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="hexaHolder">
+                <div class="hexa">
+                    <picture>
+                        <source srcset="./images/logo.avif" type="image/avif" />
+                        <source srcset="./images/logo.png" type="image/jpeg" />
+                        <img style="width: 90px; height: 90px" src="./images/logo.png" alt="cheddarbread logo" />
+                    </picture>
+                </div>
+            </div>
+            <h1 class="title">cheddarbread</h1>
+            <p class="subtitle">Delicious applications, baked to perfection.</p>
+        </header>
+        <div class="containers">
             <div class="appContainer">
                 <h2 class="appName"><span class="emoji">📃🍞</span> sheetloaf</h2>
-                <p>Fresh-made stylesheets for the whole family. Compile sass files to CSS and transform using postcss, all in one command.</p>
+                <p>Fresh-made stylesheets for the whole family. Compile sass files to CSS and transform using postcss,
+                    all in one command.</p>
                 <p>
-                    <a class="linkButton" rel="noopener" target="_blank" href="https://github.com/cheddarbread/sheetloaf">
+                    <a class="linkButton" rel="noopener" target="_blank"
+                        href="https://github.com/cheddarbread/sheetloaf">
                         Github Repo
-                        <img style="width: 16px; height: 16px" aria-hidden="true" src="./images/external-link.svg" alt="External link icon" />
+                        <img style="width: 16px; height: 16px" aria-hidden="true" src="./images/external-link.svg"
+                            alt="External link icon" />
                     </a>
                 </p>
             </div>
             <!-- END .appContainer -->
             <div class="appContainer">
                 <h2 class="appName"><span class="emoji">🍲</span> unicodestove</h2>
-                <p>Boil your text down to a tasty ascii sauce. Great for removing unicode nasties like non-breaking and half-width spaces.</p>
+                <p>Boil your text down to a tasty ascii sauce. Great for removing unicode nasties like non-breaking and
+                    half-width spaces.</p>
                 <p>
                     <a class="linkButton" rel="noopener" target="_blank" href="/unicodestove/">
                         Try It
-                        <img style="width: 16px; height: 16px" aria-hidden="true" src="./images/external-link.svg" alt="External link icon" />
+                        <img style="width: 16px; height: 16px" aria-hidden="true" src="./images/external-link.svg"
+                            alt="External link icon" />
                     </a>
                 </p>
             </div>
@@ -56,17 +68,29 @@
                 <h2 class="appName"><span class="emoji">🦊</span> contrast++</h2>
                 <p>A theme that re-balances the contrast of Firefox Proton's UI that debuted in v89.</p>
                 <p>
-                    <a class="linkButton" rel="noopener" target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/contrastplusplus/">
+                    <a class="linkButton" rel="noopener" target="_blank"
+                        href="https://addons.mozilla.org/en-US/firefox/addon/contrastplusplus/">
                         Firefox Addon
-                        <img style="width: 16px; height: 16px" aria-hidden="true" src="./images/external-link.svg" alt="External link icon" />
+                        <img style="width: 16px; height: 16px" aria-hidden="true" src="./images/external-link.svg"
+                            alt="External link icon" />
                     </a>
                 </p>
             </div>
             <!-- END .appContainer -->
-            <footer>
-                <span>Benjamin Richardson | 2021 - 2022</span>
-            </footer>
         </div>
-        <!-- END .container -->
-    </body>
+        <footer>
+            <span>Benjamin Richardson | 2021 - 2022</span>
+        </footer>
+    </div>
+    <!-- END .container -->
+
+    <svg style="position: fixed; height: 0; width: 0;" class="svg">
+        <clipPath id="bestagon" clipPathUnits="objectBoundingBox">
+            <path
+                d="M0.413,0.023 C0.471,-0.008,0.529,-0.008,0.587,0.023 L0.913,0.193 C0.971,0.223,1,0.269,1,0.33 L1,0.67 C1,0.731,0.971,0.777,0.913,0.807 L0.587,0.977 C0.529,1,0.471,1,0.413,0.977 L0.088,0.807 C0.029,0.777,0,0.731,0,0.67 L0,0.33 C0,0.269,0.029,0.223,0.088,0.193 L0.413,0.023">
+            </path>
+        </clipPath>
+    </svg>
+</body>
+
 </html>
